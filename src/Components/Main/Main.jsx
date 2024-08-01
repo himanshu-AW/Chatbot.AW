@@ -30,7 +30,7 @@ const Main = () => {
     <div className="main">
       <div className="nav">
         <p className="logo">
-          <span>Friday.Ai</span></p>
+          <span>Chatbot.Aw</span></p>
         <div className="nav-left">
           {isAuthenticated ? (<p onClick={() =>logout({ logoutParams: { returnTo: window.location.origin } })} >Log Out</p>) 
           : (<p onClick={() => loginWithRedirect()}>Log In</p>)}
