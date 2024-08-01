@@ -7,12 +7,15 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider
-    domain="dev-wmiwt11lwzis08m0.us.auth0.com"
-    clientId="V2nzLLPwNUype004Xy3YXtqCSfIUBPmA"
-    authorizationParams={{redirect_uri: window.location.origin}}>
+    domain="dev-ldklys8e3w3bsh2x.us.auth0.com"
+    clientId="SHhZSRFBKcxf7fFZjoXk5N80Dta8C3je"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
     <ContextProvider>
       <App />
     </ContextProvider>
-    ,
-  </Auth0Provider>
+  </Auth0Provider>,
+      
 );
