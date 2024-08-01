@@ -63,19 +63,19 @@
     font-size: 18px;
     cursor: pointer;
     padding: 10px 5px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 .main .nav .nav-left p:nth-child(1){
-    padding: 10px 10px;
+    padding: 6px 14px;
     border: 1px solid transparent;
   }
   .main .nav .nav-left p:nth-child(1):hover{
     border-radius: 10px;
-    border: 1px solid rgb(140, 222, 222);
-    transition: all .5s ease-in-out;
+    border: 1px solid rgb(140, 222, 222); 
     background-color: #fff;
     color: rgb(14, 176, 176);
     text-decoration: underline;
+    scale: 1.06;
   }
 .main .nav .nav-right .userImg{
     display: flex;
@@ -129,6 +129,7 @@
     width: 50px;
     height: 50px;
     background-color: rgb(55, 196, 243);
+    color: white;
     position: absolute;
     border-radius: 50%;
     bottom: 10px;
@@ -152,10 +153,10 @@
     transition: all .3s ease-in-out;
 }
 .main .cards .card:hover .icon{
-  background: #202020;
-  color: rgb(55, 196, 243);
+  background: salmon;
   transition: all .3s ease-in-out;
 }
+
 
 .main-bottom {
   position: absolute;
@@ -164,6 +165,8 @@
   max-width: 900px;
   padding: 0px 20px;
   margin: auto;
+  margin-top: 30px;
+  height: fit-content;
 }
 
 .search-box {
@@ -270,6 +273,10 @@ gap: 10px;
 }
 
 @media (max-width:600px){
+  .main .cards .card:nth-last-child(1),
+  .main .cards .card:nth-last-child(2){
+    display: none;
+  }
   .main-bottom input{
     flex: none;
     width: 150px;
@@ -285,5 +292,11 @@ gap: 10px;
   }
   .search-box{
     gap: 5px;
+  }
+}
+@media (max-width:425px) {
+  .main .cards .card:nth-last-child(3),
+  .main .cards .card:nth-last-child(4){
+    display: none;
   }
 }

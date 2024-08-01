@@ -21,15 +21,23 @@
     padding: 8px;
     width: 35px;
     border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.sidebar .menu:hover,
+.sidebar .new-chat:hover{
+    transition: all .2s ease-in-out;
+    background-color: #c3c8cf;
+    scale: 1.1 ;
 }
 
 
 .sidebar .new-chat{
+    margin: auto;
     margin-top: 30px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 15px;
+    padding: 8px 13px;
     border-radius: 50px;
     background-color: #e6eaf1;
     font-size:14px ;
@@ -57,7 +65,7 @@
 
 .sidebar .recent-entry{
     display: flex;
-    align-items: start;
+    align-items:center;
     gap: 10px;
     padding: 10px;
     padding-right: 40px;
@@ -66,7 +74,8 @@
     cursor: pointer;
 }
 .sidebar .recent-entry:hover{
-    background-color: #e2e6eb;
+    background-color: #cfd2d6;
+    scale: 1.06;
 }
 
 .sidebar .bottom{

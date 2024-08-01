@@ -24,6 +24,7 @@ const Main = () => {
       //     setInput(e.target.value);
       //   }
       // };
+      
     
   return (
     <div className="main">
@@ -36,7 +37,7 @@ const Main = () => {
           
           {isAuthenticated &&<p>Welcome {user.name}</p>}
           <div className="userImg">
-            {isAuthenticated ? <img src={user.picture} alt={user.name} /> : <img src={assets.user_icon} alt="" /> }
+            {isAuthenticated ? <img src={user.picture} alt="" /> : <img src={assets.user_icon} alt="" /> }
             
           </div>
         </div>
@@ -89,14 +90,11 @@ const Main = () => {
             </div>
           </div>
         )}
+
         <div className="main-bottom">
-        
-          
-        
           <div className="search-box">
             <input
               onChange={(e) => setInput(e.target.value)}
-              // onKeyDownCapture={(e)=>keyHandler}
               value={input}
               type="text"
               placeholder="Enter a prompt here"
