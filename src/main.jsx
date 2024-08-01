@@ -11,8 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     clientId="SHhZSRFBKcxf7fFZjoXk5N80Dta8C3je"
     authorizationParams={{
       redirect_uri: window.location.origin
-    }}
-  >
+    }}>
     <ContextProvider>
       <App />
     </ContextProvider>

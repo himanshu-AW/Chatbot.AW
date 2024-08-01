@@ -208,6 +208,13 @@
     font-weight: 300;
 }
 
+.main .footer{
+  padding: 10px 0 15px 0;
+  border-top:2px solid #ddd ;
+  text-align: center;
+  font-weight: 500;
+  color: #333333;
+}
 .result
 {
   padding: 0px 5%;

@@ -108,9 +108,10 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info">
-            Friday.Ai may display inaccurate info, including about people, so
+            Chatbot.aw may display inaccurate info, including about people, so
             double-click its responses. Your privacy and Friday.Ai App
-          </p>
+          </p> 
+          <p className="footer">Chatbot.aw@Copy-right-2024</p>
         </div>
       </div>
     </div>
